@@ -8,6 +8,17 @@
   </div>
 </template>
 
+<script>
+import { Component } from "vue-property-decorator";
+import Vue from "vue";
+
+// @ is an alias to /src
+import HelloWorld from "@/components/HelloWorld.vue";
+
+@Component({ components: { HelloWorld } })
+export default class App extends Vue {}
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
